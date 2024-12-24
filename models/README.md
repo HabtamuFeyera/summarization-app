@@ -13,3 +13,11 @@ To download the model, the backend FastAPI service uses the following code:
 ```python
 from transformers import pipeline
 summarizer = pipeline("summarization", model="t5-small", tokenizer="t5-small")
+
+
+This file provides clear instructions for managing models in your app. It explains how the models are fetched automatically, how to download them manually for offline use, and how to use pre-downloaded models.
+Steps for Pre-downloading: It provides Python code to manually download the model and save it locally.
+Troubleshooting: It includes common issues that might arise with model downloading and usage, helping users quickly resolve any problems.
+
+With this setup, you ensure that anyone setting up the project has clear instructions for dealing with models, especially in cases where internet connectivity might be an issue.
+
